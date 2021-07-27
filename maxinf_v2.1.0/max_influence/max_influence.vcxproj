@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27584AC0-E1EA-4EC1-871D-9D85287E6F9B}</ProjectGuid>
+    <RootNamespace>max_influence_vs13</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\code\algo_base.h" />
+    <ClInclude Include="..\code\cascade.h" />
+    <ClInclude Include="..\code\cgreedy.h" />
+    <ClInclude Include="..\code\common.h" />
+    <ClInclude Include="..\code\compatible.h" />
+    <ClInclude Include="..\code\contcascade.h" />
+    <ClInclude Include="..\code\degree.h" />
+    <ClInclude Include="..\code\degreediscount_ic.h" />
+    <ClInclude Include="..\code\event_timer.h" />
+    <ClInclude Include="..\code\general_cascade.h" />
+    <ClInclude Include="..\code\graph.h" />
+    <ClInclude Include="..\code\graph_basic.h" />
+    <ClInclude Include="..\code\graph_stat.h" />
+    <ClInclude Include="..\code\greedy.h" />
+    <ClInclude Include="..\code\greedy_online.h" />
+    <ClInclude Include="..\code\independ_cascade.h" />
+    <ClInclude Include="..\code\mia.h" />
+    <ClInclude Include="..\code\mis.h" />
+    <ClInclude Include="..\code\mi_command_line.h" />
+    <ClInclude Include="..\code\mi_limit.h" />
+    <ClInclude Include="..\code\mi_random.h" />
+    <ClInclude Include="..\code\mi_util.h" />
+    <ClInclude Include="..\code\pagerank.h" />
+    <ClInclude Include="..\code\pmia.h" />
+    <ClInclude Include="..\code\random_pick.h" />
+    <ClInclude Include="..\code\reverse_general_cascade.h" />
+    <ClInclude Include="..\code\rim_agreedy.h" />
+    <ClInclude Include="..\code\rim_crgreedy.h" />
+    <ClInclude Include="..\code\rim_greedy.h" />
+    <ClInclude Include="..\code\rim_simulate.h" />
+    <ClInclude Include="..\code\rr_infl.h" />
+    <ClInclude Include="..\code\simulate.h" />
+    <ClInclude Include="..\code\SP1M_gc.h" />
+    <ClInclude Include="..\code\SPM_gc.h" />
+    <ClInclude Include="..\code\topic_aware.h" />
+    <ClInclude Include="..\code\top_selection.h" />
+    <ClInclude Include="..\code\weighted_degree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\code\algo_base.cpp" />
+    <ClCompile Include="..\code\cascade.cpp" />
+    <ClCompile Include="..\code\cgreedy.cpp" />
+    <ClCompile Include="..\code\common.cpp" />
+    <ClCompile Include="..\code\compatible.cpp" />
+    <ClCompile Include="..\code\contcascade.cpp" />
+    <ClCompile Include="..\code\degree.cpp" />
+    <ClCompile Include="..\code\degreediscount_ic.cpp" />
+    <ClCompile Include="..\code\event_timer.cpp" />
+    <ClCompile Include="..\code\general_cascade.cpp" />
+    <ClCompile Include="..\code\graph.cpp" />
+    <ClCompile Include="..\code\graph_basic.cpp" />
+    <ClCompile Include="..\code\graph_stat.cpp" />
+    <ClCompile Include="..\code\greedy.cpp" />
+    <ClCompile Include="..\code\greedy_online.cpp" />
+    <ClCompile Include="..\code\independ_cascade.cpp" />
+    <ClCompile Include="..\code\main.cpp" />
+    <ClCompile Include="..\code\mia.cpp" />
+    <ClCompile Include="..\code\mis.cpp" />
+    <ClCompile Include="..\code\mi_command_line.cpp" />
+    <ClCompile Include="..\code\mi_random.cpp" />
+    <ClCompile Include="..\code\mi_util.cpp" />
+    <ClCompile Include="..\code\pagerank.cpp" />
+    <ClCompile Include="..\code\pmia.cpp" />
+    <ClCompile Include="..\code\random_pick.cpp" />
+    <ClCompile Include="..\code\reverse_general_cascade.cpp" />
+    <ClCompile Include="..\code\rim_agreedy.cpp" />
+    <ClCompile Include="..\code\rim_crgreedy.cpp" />
+    <ClCompile Include="..\code\rim_greedy.cpp" />
+    <ClCompile Include="..\code\rim_simulate.cpp" />
+    <ClCompile Include="..\code\rr_infl.cpp" />
+    <ClCompile Include="..\code\simulate.cpp" />
+    <ClCompile Include="..\code\SP1M_gc.cpp" />
+    <ClCompile Include="..\code\SPM_gc.cpp" />
+    <ClCompile Include="..\code\topic_aware.cpp" />
+    <ClCompile Include="..\code\top_selection.cpp" />
+    <ClCompile Include="..\code\weighted_degree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\code\README.docx" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

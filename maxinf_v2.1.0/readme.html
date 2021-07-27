@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Readme for Max Influence Software</h1>
+<p><strong>version: 2.0</strong></p>
+<p><em>Notice: Some of the algorithms implemented in this package are under US patent application. Please use it only for academic purposes.</em></p>
+<p><em>Readme is powered by MarkDown.</em></p>
+<hr />
+<h1>Change List</h1>
+<p>v2.1: Wei Chen (weic@microsoft.com), 2016.10.6</p>
+<ul>
+<li>Replace the single node influence computation option -rr3s with -rrsn, relying on the Shapley computation structure. </li>
+</ul>
+<p>v2.0: Wei Chen (weic@microsoft.com), 2016.8.2</p>
+<ul>
+<li>Add Shapley centrality computation for social influence [4] (the -rrs option)</li>
+<li>Add computation of single node influence (the -rr3s option)</li>
+</ul>
+<p>v1.0:  Tian Lin (bolitt@gmail.com), 2016.1.30</p>
+<ul>
+<li>Add topic-aware influence maximization [3]</li>
+<li>Add implementation of reverse influence maximization via RR set [5,6]</li>
+<li>Refactor interfaces </li>
+</ul>
+<p>v0.0:  Siyu Yang, Chi Wang (wang.chi@microsoft.com)</p>
+<ul>
+<li>Original code for influence maximization in [1,2].</li>
+</ul>
+<hr />
+<h1>How to Compile</h1>
+<h2>Compile C++</h2>
+<p>Click &quot;max_influence.sln&quot;, and run compile.</p>
+<h2>Compile Interfaces for Python</h2>
+<p>** Preparation For Windows: **</p>
+<ul>
+<li>
+<p>Install SWIG (version &gt;= 3.0.0), and make sure &quot;directory<em>to</em>SWIG&quot; is added to the system path variables.</p>
+<ul>
+<li>SWIG: http://swig.org/. SWIG (Simple Wrapper and Interface Generator) is typically used to parse C/C++ interfaces and generate the 'glue code' for other target languages to call into the C/C++ code.</li>
+</ul>
+</li>
+<li>
+<p>Set the compiler. Set VS90COMNTOOLS Set to the path of cl.exe, which is usually in C:\Program Files (x86)\Microsoft Visual Studio XXXX\VC\bin. This will ensure the </p>
+</li>
+<li>
+<p>Make sure distutil tool is installed for python.</p>
+</li>
+</ul>
+<p>cd to the subdirectory &quot;python&quot;, and then run command line:</p>
+<pre><code>python setup.py build_ext
+</code></pre>
+
+<hr />
+<h1>Usage</h1>
+<h2>Command:</h2>
+<p>** Manual: **  </p>
+<p>Command line:</p>
+<pre><code>max_influence.exe [-b|-g|-p|-m|...] &lt; inputfile   
+</code></pre>
+
+<p>** Help: **  </p>
+<p>Command line:</p>
+<pre><code>max_influence.exe -h
+</code></pre>
+
+<p>You will see:</p>
+<pre><code>MaxInfluence (ver 2.0.0), Build: {Build time}, {OS}, ({bit length}, [Debug|Release])
+
+-h: print the help
+-st : statistics of the weighted cascade graph
+-stg : statistics of the general independent cascade graph
+-b : baseline: random (-br), degree (-bd), degreediscount (-bdd), weighteddegree (-bw), pagerank (-bp) for general ic
+-g : greedy, SPM and SP1M for general ic
+-go : greedy with online bound for general ic
+-p &lt;bound1=10&gt; &lt;bound2=2000&gt; : PMIA with 1/theta from bound1 to bound2
+-m &lt;bound1=10&gt; &lt;bound2=2000&gt; : MIA with 1/theta from bound1 to bound2
+-gwc filename1 filename2... : c-greedy algorithm
+-gwcl seeds_list_file : c-greedy algorithm
+-mis seeds_list_file dist1 dist2 ... distd : MIS(marginal influence sort) algorithm
+-ts seeds_list_file dist1 dist2 ... distd : BTS(top-selection) algorithm
+-t seeds_file &lt;num_iter=10000&gt; &lt;seed_set_size = 50&gt; &lt;output_file=GC_spread.txt&gt; &lt;nthreads=1&gt;: test influence spread with seeds
+-rr : reverse influence maximization algorithms.
+  + -rr1 &lt;sample_num=1000000&gt; (SODA'14)   
+  + -rr2 &lt;eps=0.1&gt; &lt;ell=1.0&gt;  (SIGMOD'14, TIM-Plus)   
+  + -rr3 &lt;eps=0.1&gt; &lt;ell=1.0&gt;  (SIGMOD'15, IMM)   
+  + -rro / -rr1o / -rr2o / -rr3o : parallel optimization of the above   
+  + -rrs &lt;eps=0.1&gt; &lt;ell=1.0&gt;  &lt;k = 50&gt;        compute node Shapley values, with top k nodes ensuring relative error of eps  
+  + -rrsn &lt;eps=0.1&gt; &lt;ell=1.0&gt; &lt;k = 50&gt;   compute single node influence ranking, with top k nodes ensuring relative error of eps, adapted from Shapley computation   
+-cic &lt;max_time=10.0&gt;: continuos independent cascade model. -cics : for graph statistics
+-prgen &lt;dampen=0.15&gt; &lt;out_graph=pagerank_regen.txt&gt;: use pagerank to re-generate graph
+</code></pre>
+
+<h2>Example:</h2>
+<p>Command line:</p>
+<pre><code>max_influence.exe -p 20 1000 &lt; dm-wc.txt
+</code></pre>
+
+<h2>Input file format</h2>
+<p>The input file should follow the format exactly as shown in the example file below. The first line has two fields, giving the number of nodes, and the number of edges (counted as undirected edges). Each pair of following lines specify one edge (u, v) with the probability p(u,v) and p(v,u), respectively. The first line of the pair is &quot;u v p(u,v) p(v,u)&quot;, and the second line of the pair &quot;v u p(v,u), p(u,v)&quot;. The redundancy of the pair representation is due to legacy reason. The total number of lines after the first line should be twice the number of edges giving in line 1.</p>
+<p>For convenience, we include an example data file dm-wc.txt in the data_example folder. The data file is the DM dataset included in [2], with weighted cascade edge probability setting. The following is an excerpt of the input file. For other data files, please write your own conversion script as needed.</p>
+<h2>Example input:</h2>
+<pre><code>679 1687          // #nodes #edges(undirected))
+1 14 0.055556 1.000000    // u v prob_u2v prob_v2u  
+14 1 1.000000 0.055556    // v u prob_v2u prob_u2v  
+2 8 0.083333 0.200000
+8 2 0.200000 0.083333
+2 285 0.500000 0.200000
+285 2 0.200000 0.500000
+2 397 0.142857 0.200000
+397 2 0.200000 0.142857
+...
+665 677 0.055556 0.333333
+677 665 0.333333 0.055556
+666 677 0.055556 1.000000
+677 666 1.000000 0.055556
+(contains 2 times of #edges in total)
+</code></pre>
+
+<h2>Example output:</h2>
+<p>{method}.txt: <em>seed file</em></p>
+<pre><code>50          // #seeds = k
+182   64.4  // seed_1  infl_1
+22    32.17  // seed_2  infl_2
+1983  28.4   // seed_3  infl_3
+...
+(until k seeds)  
+</code></pre>
+
+<p>GC_{method}.txt: <em>simulation file</em> </p>
+<pre><code>1 64.2865      // k influence by k seeds
+2 96.0239
+3 124.117
+4 151.649
+5 172.513
+...
+(until k seeds)
+</code></pre>
+
+<p>time_{method}.txt: <em>running time</em></p>
+<pre><code>0.0518944    // running time
+</code></pre>
+
+<hr />
+<h1>Code structures</h1>
+<p>&quot;max<em>influence.sln&quot; is the project for <em>Visual Studio 2013</em>, and Folder &quot;max</em>influence&quot; contains the related project information.</p>
+<p>Folder &quot;code&quot; contains implementation of different algorithms. Here is a list of files:</p>
+<pre><code>*File Name*      *Description*
+main.cpp                   The main program
+algo_base.h/cpp            Base class for MaxInfl Algorithm
+compatible.h/cpp           Cross OS compatibility
+common.h/cpp               Common header included in most code
+degree.h/cpp               Highest degree
+weighteddegree.h/cpp       Weighted degree
+pagerank.h/cpp             Pagerank
+degreeDiscount_IC.h/cpp    Degree Discount IC [2]
+random_pick.h/cpp          Picking nodes randomly
+graph_basic.h/cpp          Node, edge and helper functions
+graph.h/cpp                Reading the graph data from standard input
+greedy.h/cpp               Greedy algorithm, accelerated by CELF
+greedy_online.h/cpp        CELP with online bound
+mi_limit.h                 Some parameters
+mi_random.h/cpp            Pseudo-random number generator
+mi_command_line.h/cpp      Command line entry, different algorithms are selected by switches
+mi_util.h/cpp              Utility functions and macros
+event_timer.h/cpp          Timer class
+independ_cascade.h/cpp     Implementation of IC model
+general_cascade.h/cpp      Implementation of GC model
+SPM_gc.h/cpp               Implementatin of SPM for GC, optimized according to submodularity
+SP1M_gc.h/cpp              Implementatin of SP1M for GC, optimized according to submodularity
+pmia.h/cpp                 Implementation of PMIA [1]
+mia.h/cpp                  Implementation of MIA [1]
+topic_aware.h/cpp          Reading preprocessed seeds from files
+top_selection.h/cpp        Implementation of BTS (best topic selection, a.k.a. top selection) [3]
+cgreedy.h/cpp              Implementation of CGreedy [3]
+mis.h/cpp                  Implementation of MIS (Marginal influence sort) [3]
+reverse_general_cascade.h/cpp   Implementation of reverse GC model
+rr_infl.h/cpp              Implementation of reverse reachiable (RR) set related influence maximization and Shapley value computations
+contcascade.h/cpp          Implementation of Continous-time General Cascade Model
+simulate.h/cpp             Helper class for simulation
+graph_stat.h/cpp           Calculate graph statistics  
+</code></pre>
+
+<p>Folder &quot;python&quot; contains the port/interfaces to python:</p>
+<pre><code>*File Name*       *Description*
+setup.py         Setup for python
+test.py          Tests for python
+port_mi.i        SWIG code for interfaces
+makefile         makefile for Unix
+MANIFEST.in      Package information
+test_graph.inf   Data used in Tests
+</code></pre>
+
+<p>Folder &quot;doc&quot; contains documents.</p>
+<p>Folder &quot;data_example&quot; contains the example data file.</p>
+<hr />
+<h1>References</h1>
+<p>If you use this code in the above, please cite one of the following papers:</p>
+<p>[1] Wei Chen, Yajun Wang, and Siyu Yang. Efficient influence maximization in social networks. In Proceedings of the 15th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD'2009), Paris, France, June 2009.</p>
+<p>[2] Chi Wang, Wei Chen, and Yajun Wang. Scalable influence maximization for independent cascade model in large-scale social networks. Data Mining and Knowledge Discovery Journal, 25(3), 2012,  545 - 576. Conference version appeared in KDD'2010, as &quot;Wei Chen, Chi Wang, and Yajun Wang. Scalable influence maximization for prevalent viral marketing in large-scale social networks&quot;.</p>
+<p>[3] Wei Chen, Tian Lin, and Cheng Yang. Real-time topic-aware influence maximization using preprocessing. In Proceedings of the 4th International Conference on Computational Social Networks (CSoNet'2015), Beijing, China, August, 2015.</p>
+<p>[4] Wei Chen and Shang-Hua Teng. Interplay between Social Influence and Network Centrality: Shapley Values and Scalable Algorithms. Arxiv:1602.03780, 2016.</p>
+<p>For the original papers of reverse influence maximization via RR set, please refer to:</p>
+<p>[5] C. Borgs, M. Brautbar, J. Chayes, and B. Lucier. Maximizing social influence in nearly optimal time. In SODA, 14,</p>
+<p>[6] Y. Tang, Y. Shi, and X. Xiao. Influence maximization in near-linear time: a martingale approach. In SIGMOD, 2015.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
